@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "score_to_health:load"
+  }
+}

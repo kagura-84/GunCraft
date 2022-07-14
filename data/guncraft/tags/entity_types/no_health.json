@@ -1,0 +1,24 @@
+{
+    "values": [
+        "#minecraft:arrows",
+        "minecraft:area_effect_cloud",
+        "minecraft:armor_stand",
+        "minecraft:egg",
+        "minecraft:ender_pearl",
+        "minecraft:evoker_fangs",
+        "minecraft:experience_bottle",
+        "minecraft:experience_orb",
+        "minecraft:eye_of_ender",
+        "minecraft:falling_block",
+        "minecraft:firework_rocket",
+        "minecraft:fishing_bobber",
+        "minecraft:glow_item_frame",
+        "minecraft:item",
+        "minecraft:item_frame",
+        "minecraft:lightning_bolt",
+        "minecraft:small_fireball",
+        "minecraft:snowball",
+        "minecraft:trident",
+        "marker"
+    ]
+}
