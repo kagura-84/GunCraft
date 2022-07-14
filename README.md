@@ -12,3 +12,7 @@ ____
     - 光っぽい弾丸 色々貫通する
   - Fire
     - 炎っぽい弾丸　水中で無能になる代わりに環境効果が強い
+
+## 使ったやつ
+- ScoreToHealth
+- ForwardSpreder
