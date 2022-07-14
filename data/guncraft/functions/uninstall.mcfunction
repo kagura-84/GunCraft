@@ -9,7 +9,6 @@
     scoreboard objectives remove GunCraft.damage
     scoreboard objectives remove GunCraft.head_damage
     scoreboard objectives remove GunCraft.hit
-    scoreboard objectives remove GunCraft.Number
     scoreboard objectives remove Guncraft.penetration
     scoreboard objectives remove GunCraft.PlayerID
     scoreboard objectives remove GunCraft.Rclick
@@ -18,10 +17,10 @@
     scoreboard objectives remove GunCraft.sneak
     scoreboard objectives remove GunCraft.speed
     scoreboard objectives remove GunCraft.trigger
+    scoreboard objectives remove GunCraft.recoil
     scoreboard objectives remove GunSound
     scoreboard objectives remove Help
     scoreboard objectives remove Setting.GunSound
-    scoreboard objectives remove GunCraft.fall
 
     tellraw @a {"color": "yellow","text": "[ 1 / 3 ]"}
 
@@ -42,4 +41,6 @@
     tellraw @a {"color": "yellow","text": "データパック [ GunCraft ] のスコアが削除されました"}
 
 # アンインストールｯ
-    datapack disable "file/GunCraft.zip"
+    execute store success score $uninstall GunCraft.Number run datapack disable "file/GunCraft.zip"
+    execute if score $uninstall GunCraft.Number matches 1 run scoreboard objectives remove GunCraft.Number
+    execute unless score $uninstall GunCraft.Number matches 1 run tellraw @a {"color": "red","text": "データパック [ GunCraft ] のアンインストールが失敗しました"}
