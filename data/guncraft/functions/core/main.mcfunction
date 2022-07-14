@@ -5,7 +5,7 @@
 # @within function guncraft:system/tick
 
 function guncraft:core/score_get
-function guncraft:core/recoil
+execute if score @s GunCraft.recoil matches 1.. at @s run function guncraft:core/recoil
 
 execute if score @s GunCraft.cool_time matches 0 if predicate guncraft:have/gun run scoreboard players enable @s GunCraft.trigger
 execute at @s if score @s GunCraft.cool_time matches 1 if predicate guncraft:have/gun run function guncraft:core/sounds/reload
