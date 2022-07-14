@@ -7,9 +7,11 @@
 
 # 弾丸の性能設定
     execute as @e[tag=GunCraft.preparation] run function guncraft:core/3burst/projectile_set
+    scoreboard players set @s GunCraft.recoil 6
+    execute if predicate guncraft:flag/sneaking run scoreboard players set @s GunCraft.recoil 4
 
 # 微調整
-    scoreboard players set @s GunCraft.cool_time 3
+    scoreboard players set @s GunCraft.cool_time 6
     execute at @s anchored eyes positioned ^ ^ ^ run tp @e[tag=GunCraft.preparation] ^ ^ ^0.5 ~ ~
     execute as @e[tag=GunCraft.preparation] at @s run function guncraft:core/3burst/spread
     tag @e[tag=GunCraft.preparation] remove GunCraft.preparation

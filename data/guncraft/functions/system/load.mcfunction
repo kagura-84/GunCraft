@@ -32,6 +32,8 @@
     scoreboard objectives add GunCraft.Rclick minecraft.used:minecraft.carrot_on_a_stick
 # sneak
     scoreboard objectives add GunCraft.sneak custom:sneak_time
+# リコイル
+    scoreboard objectives add GunCraft.recoil dummy
 
 # Help
     scoreboard objectives add Help trigger

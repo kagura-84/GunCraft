@@ -11,6 +11,7 @@
 
 # 弾丸の性能設定
     execute as @e[tag=GunCraft.preparation] run function guncraft:core/bazooka/projectile_set
+    scoreboard players set @s GunCraft.recoil 6
 
 # 微調整
     scoreboard players set @s GunCraft.cool_time 40

@@ -11,6 +11,8 @@
 
 # 弾丸の性能設定
     execute as @e[tag=GunCraft.preparation] run function guncraft:core/fire_gun/projectile_set
+    scoreboard players set @s GunCraft.recoil 6
+    execute if predicate guncraft:flag/sneaking run scoreboard players set @s GunCraft.recoil 5
 
 # 微調整
     scoreboard players set @s GunCraft.cool_time 2
