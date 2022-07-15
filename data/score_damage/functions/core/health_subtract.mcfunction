@@ -26,7 +26,8 @@
     # Mob
         execute if entity @s[type=!player] if score $SubtractedHealth ScoreDamageCore matches 1.. store result entity @s Health float 0.0001 run scoreboard players get $SubtractedHealth ScoreDamageCore
     # Common
-        execute if score $SubtractedHealth ScoreDamageCore matches ..0 run kill @s
+        execute if entity @s[type=player] if score $SubtractedHealth ScoreDamageCore matches ..0 run function guncraft:core/projectile/msg/kill_by_projectile
+        execute if entity @s[type=!player] if score $SubtractedHealth ScoreDamageCore matches ..0 run kill @s
 # 演出
     execute if score $SubtractedHealth ScoreDamageCore matches 1.. if entity @s[type=#score_damage:undead] run summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,Effects:[{Id:11b,Amplifier:127b,Duration:1,ShowParticles:0b},{Id:6b,Amplifier:0b,Duration:1,ShowParticles:0b}]}
     execute if score $SubtractedHealth ScoreDamageCore matches 1.. if entity @s[type=!#score_damage:undead] run summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,Effects:[{Id:11b,Amplifier:127b,Duration:1,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b}]}

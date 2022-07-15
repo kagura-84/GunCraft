@@ -4,8 +4,8 @@
 #
 # @within function guncraft:core/damage
 
-execute store result storage senba.damage damage int 1.0 run scoreboard players get @e[tag=projectile_this,limit=1] GunCraft.head_damage
-execute if entity @e[tag=projectile_this,tag=GunCraft.bom] run summon tnt
+execute store result storage score_damage: damage float 1.0 run scoreboard players get @e[tag=projectile_this,limit=1] GunCraft.head_damage
+execute if entity @e[tag=projectile_this,tag=GunCraft.bom] run function guncraft:core/projectile/explosion
 execute at @a[tag=attack_player,limit=1] run playsound minecraft:block.note_block.bell player @a ~ ~ ~ 1 1.5
 execute at @a[tag=attack_player,limit=1] run playsound minecraft:block.anvil.place player @a ~ ~ ~ 1 2
 execute at @s anchored eyes positioned ^ ^ ^ run particle flash ~ ~ ~ 0 0 0 0 1 force

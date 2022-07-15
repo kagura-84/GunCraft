@@ -1,7 +1,7 @@
 #> guncraft:core/3burst/projectile_set
 
 # 性能
-    scoreboard players set @s GunCraft.damage 200
+    scoreboard players set @s GunCraft.damage 2
     scoreboard players set @s GunCraft.head_damage 350
     scoreboard players set @s GunCraft.speed 50
     scoreboard players set @s GunCraft.reach 60

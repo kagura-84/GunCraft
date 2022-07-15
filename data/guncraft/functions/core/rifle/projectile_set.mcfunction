@@ -1,8 +1,8 @@
 #> guncraft:core/rifle/projectile_set
 
 # 性能
-    scoreboard players set @s GunCraft.damage 1000
-    scoreboard players set @s GunCraft.head_damage 2000
+    scoreboard players set @s GunCraft.damage 10
+    scoreboard players set @s GunCraft.head_damage 20
     scoreboard players set @s GunCraft.speed 100
     scoreboard players set @s GunCraft.reach 800
 

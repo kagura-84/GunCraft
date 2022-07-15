@@ -35,5 +35,5 @@
     execute if entity @s[scores={GunCraft.reach=1..,GunCraft.recursion=1..}] at @s anchored eyes positioned ^ ^ ^ run function guncraft:core/projectile/move
 
 # 弾丸破壊
-    execute if score @s GunCraft.reach matches 0 if entity @s[tag=GunCraft.bom] run summon tnt
+    execute if score @s GunCraft.reach matches 0 if entity @s[tag=GunCraft.bom] run function guncraft:core/projectile/explosion
     execute if score @s GunCraft.reach matches 0 run kill @s
