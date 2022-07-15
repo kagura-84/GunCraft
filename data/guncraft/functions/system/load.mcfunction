@@ -10,14 +10,10 @@
     scoreboard objectives add GunCraft.head_damage dummy
 # 弾速
     scoreboard objectives add GunCraft.speed dummy
-# 弾速の減衰
-    scoreboard objectives add GunCraft.fall dummy
 # 銃の射程
     scoreboard objectives add GunCraft.reach dummy
 # 再帰カウント
     scoreboard objectives add GunCraft.recursion dummy
-# 防御貫通
-    scoreboard objectives add Guncraft.penetration dummy
 # PlayerID
     scoreboard objectives add GunCraft.PlayerID dummy
 # hit処理実行

@@ -5,7 +5,6 @@
     scoreboard players set @s GunCraft.head_damage 350
     scoreboard players set @s GunCraft.speed 50
     scoreboard players set @s GunCraft.reach 60
-    scoreboard players set @s Guncraft.penetration 10
 
 # 再帰カウント
     scoreboard players set @s GunCraft.recursion 10
