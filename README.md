@@ -16,3 +16,4 @@ ____
 ## 使ったやつ
 - ScoreToHealth
 - ForwardSpreder
+- ScoreDamage
