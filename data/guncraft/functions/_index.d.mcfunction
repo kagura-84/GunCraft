@@ -12,3 +12,7 @@
  #declare tag/block guncraft:in_water
  #declare tag in_water 水にぶち込まれた弾丸につく
  #declare tag projectile_this
+ #declare tag GunCraft.hit_bom
+ #declare tag GunCraft.hit_light
+ #declare tag GunCraft.hit_fire
+ #declare tag GunCraft.hit_rifle

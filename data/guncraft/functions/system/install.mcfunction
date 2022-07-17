@@ -8,6 +8,7 @@
     scoreboard players set @s Help 0
     scoreboard players set @s GunSound 0
     scoreboard players set @s GunCraft.cool_time 0
+    scoreboard players set @s GunCraft.trigger 0
     scoreboard players enable @s Help
     scoreboard players enable @s GunSound
     scoreboard players enable @s GunCraft.trigger

@@ -1,4 +1,5 @@
 {
+    "replace": false,
     "values": [
         "guncraft:system/load",
         "score_to_health:load",

@@ -23,7 +23,7 @@
     scoreboard players remove @s GunCraft.recursion 1
 
 # ブロックの衝突
-    execute unless block ~ ~ ~ #guncraft:no_collision if entity @s[tag=GunCraft.bom] run summon tnt
+    execute unless block ~ ~ ~ #guncraft:no_collision if entity @s[tag=GunCraft.bom] run function guncraft:core/projectile/explosion
     execute if entity @s[tag=GunCraft.bom] if block ~ ~ ~ #guncraft:in_water run kill @s
     execute unless entity @s[tag=GunCraft.light] unless block ~ ~ ~ #guncraft:no_collision run kill @s
     execute if entity @s[tag=GunCraft.light] unless block ~ ~ ~ #guncraft:transparent run kill @s

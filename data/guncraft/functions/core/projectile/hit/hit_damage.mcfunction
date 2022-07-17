@@ -24,6 +24,10 @@
     data remove storage score_damage: Damage
 
 # tag解除
+    execute if entity @e[tag=GunCraft.hit_bom] run tag @e[tag=GunCraft.hit_bom] remove GunCraft.hit_bom
+    execute if entity @e[tag=GunCraft.hit_fire] run tag @e[tag=GunCraft.hit_fire] remove GunCraft.hit_fire
+    execute if entity @e[tag=GunCraft.hit_light] run tag @e[tag=GunCraft.hit_light] remove GunCraft.hit_light
+    execute if entity @e[tag=head_shot] run tag @e[tag=head_shot] remove head_shot
     tag @a[tag=attack_player] remove attack_player
     tag @e[tag=damage] remove damage
 
