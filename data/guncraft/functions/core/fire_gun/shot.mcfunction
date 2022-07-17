@@ -17,6 +17,6 @@
 # 微調整
     scoreboard players set @s GunCraft.cool_time 2
     execute if score @s GunCraft.sneak matches 1.. run scoreboard players add @s GunCraft.cool_time 2
-    execute at @s anchored eyes positioned ^ ^ ^ run tp @e[type=marker,tag=GunCraft.preparation,sort=nearest,limit=1] ^ ^ ^0.5 ~ ~
+    tp @e[type=marker,tag=GunCraft.preparation,sort=nearest,limit=1] ^ ^ ^0.5 ~ ~
     execute unless score @s GunCraft.sneak matches 1.. as @e[tag=GunCraft.preparation,limit=1] at @s run function guncraft:core/fire_gun/spread
     tag @e[type=marker,tag=GunCraft.preparation,sort=nearest,limit=1] remove GunCraft.preparation

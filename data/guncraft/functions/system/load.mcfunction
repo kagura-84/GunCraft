@@ -30,6 +30,8 @@
     scoreboard objectives add GunCraft.sneak custom:sneak_time
 # リコイル
     scoreboard objectives add GunCraft.recoil dummy
+# used
+    scoreboard objectives add GunCraft.use_gun dummy
 
 # Help
     scoreboard objectives add Help trigger
