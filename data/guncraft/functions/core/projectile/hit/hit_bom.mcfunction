@@ -2,7 +2,10 @@
 #
 # 爆弾にあたったときの処理
 #
-# @within function guncraft:core/hit
+# @within function guncraft:core/projectile/hit/
 
-execute if entity @s[type=tnt] run data modify entity @s Fuse set value 1
-execute if entity @s[type=end_crystal] run function guncraft:core/projectile/explosion
+# tnt
+    execute if entity @s[type=tnt] run data modify entity @s Fuse set value 1
+
+# end_crystal
+    execute if entity @s[type=end_crystal] run summon tnt

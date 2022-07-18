@@ -1,4 +1,8 @@
 #> guncraft:core/3burst/projectile_set
+#
+# スコア設定
+#
+# @within function guncraft:core/3burst/shot
 
 # 性能
     scoreboard players set @s GunCraft.damage 2

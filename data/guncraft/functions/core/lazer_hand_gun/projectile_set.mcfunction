@@ -1,4 +1,8 @@
 #> guncraft:core/lazer_hand_gun/projectile_set
+#
+# スコア設定
+#
+# @within function guncraft:core/lazer_hand_gun/shot
 
 # 性能
     scoreboard players set @s GunCraft.damage 3

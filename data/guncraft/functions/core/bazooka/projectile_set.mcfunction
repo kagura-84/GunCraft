@@ -1,4 +1,8 @@
 #> guncraft:core/bazooka/projectile_set
+#
+# スコア設定
+#
+# @within function guncraft:core/bazooka/shot
 
 # 性能
     scoreboard players set @s GunCraft.damage 5

@@ -1,4 +1,8 @@
 #> guncraft:core/projectile/msg/kill_by_head
+#
+# ヘッドショットでのデスメッセージ
+#
+# @within function guncraft:core/projectile/msg/kill_by_projectile
 
 execute if entity @s[tag=GunCraft.hit_bom] run tellraw @a [{"selector":"@s"},{"text":" は "},{"selector":"@a[tag=attack_player]"},{"text":" に盛大に爆破された"}]
 execute if entity @s[tag=GunCraft.hit_fire] run tellraw @a [{"selector":"@s"},{"text":" は "},{"selector":"@a[tag=attack_player]"},{"text":" に超アツアツにされた"}]

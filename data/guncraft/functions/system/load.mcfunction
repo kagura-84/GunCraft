@@ -1,48 +1,138 @@
 #> guncraft:system/load
 #
-# load
+# load処理
 #
 # @private
 
-# 威力
-    scoreboard objectives add GunCraft.damage dummy
+
+#> performance
+# ____
+# 弾丸の通常ダメージ
+# @internal
+scoreboard objectives add GunCraft.damage dummy
+
+#> performance
+# ____
 # ヘッドショットのダメージ
-    scoreboard objectives add GunCraft.head_damage dummy
+# - GunCraft.damage より高い数値を設定することを推奨します
+# @internal
+scoreboard objectives add GunCraft.head_damage dummy
+
+#> performance
+# ____
 # 弾速
-    scoreboard objectives add GunCraft.speed dummy
+# - [m/s]の 1/5 に相当します
+# @internal
+scoreboard objectives add GunCraft.speed dummy
+
+#> performance
+# ____
 # 銃の射程
-    scoreboard objectives add GunCraft.reach dummy
+# - [m] の 4倍に相当します
+# @internal
+scoreboard objectives add GunCraft.reach dummy
+
+#> temp
+# ____
 # 再帰カウント
-    scoreboard objectives add GunCraft.recursion dummy
+# - システム内の処理で使用されます
+# @internal
+scoreboard objectives add GunCraft.recursion dummy
+
+#> UUID
+# ____
 # PlayerID
-    scoreboard objectives add GunCraft.PlayerID dummy
-# hit処理実行
-    scoreboard objectives add GunCraft.hit dummy
-# 計算用の数字
-    scoreboard objectives add GunCraft.Number dummy
+# - プレイヤーごとに割り振られる固有のスコアです
+# @internal
+scoreboard objectives add GunCraft.PlayerID dummy
+
+#> temp
+# ____
+# - 1tickで終了する内部処理で使用します
+# @internal
+scoreboard objectives add GunCraft.Temp dummy
+
+#> trigger
+# ____
 # 銃のトリガー
-    scoreboard objectives add GunCraft.trigger trigger
+# - 銃が発射されるとき使用します
+# @internal
+scoreboard objectives add GunCraft.trigger trigger
+
+#> count
+# ____
 # クールタイム
-    scoreboard objectives add GunCraft.cool_time dummy
-# click
-    scoreboard objectives add GunCraft.Rclick minecraft.used:minecraft.carrot_on_a_stick
-# sneak
-    scoreboard objectives add GunCraft.sneak custom:sneak_time
+# - 銃のクールタイムです
+# - この値が0になるまで銃は発射されません
+# @internal
+scoreboard objectives add GunCraft.cool_time dummy
+
+#> click
+# ____
+# クリック
+# - 人参棒のクリック判定用スコアです
+# @internal
+scoreboard objectives add GunCraft.Rclick minecraft.used:minecraft.carrot_on_a_stick
+
+#> count
+# ____
+# スニーク時間
+# - スニークの持続時間です
+# @internal
+scoreboard objectives add GunCraft.sneak custom:sneak_time
+
+#> count
+# ____
 # リコイル
-    scoreboard objectives add GunCraft.recoil dummy
-# used
-    scoreboard objectives add GunCraft.use_gun dummy
-# scope_rifle
-    scoreboard objectives add GunCraft.using_scope dummy
+# - 銃のリコイルです
+# - 値が大きいほど強くリコイルします
+# @internal
+scoreboard objectives add GunCraft.recoil dummy
 
+#> count
+# ____
+# オフセット
+# - 銃のオフセットです
+# - 両手持ちの際に発射位置を設定します
+# - Min: -1
+# - Max: 1
+# @internal
+scoreboard objectives add GunCraft.use_hand dummy
+
+#> click
+# ____
+# 望遠鏡の使用時間
+# @internal
+scoreboard objectives add GunCraft.using_scope dummy
+
+#> count
+# ____
+# リロード
+# - リロードの進行度です
+# - 0になるとリロードされます
+scoreboard objectives add GunCraft.reload dummy
+
+#> setting
+# ____
 # Help
-    scoreboard objectives add Help trigger
-# GunSound
-    scoreboard objectives add GunSound trigger
+# - 設定の呼び出し用スコアです
+# @internal
+scoreboard objectives add Help trigger
 
-# Setting.GunSound
-    scoreboard objectives add Setting.GunSound dummy
+#> setting
+# ____
+# GunParticle
+# - 設定の呼び出し用スコアです
+# @internal
+scoreboard objectives add GunParticle trigger
+
+#> setting
+# ____
+# - 銃のパーティクル表示設定です
+# @internal
+scoreboard objectives add Setting.GunParticle dummy
+
 
 # スコア設定
     execute unless score $Global GunCraft.PlayerID matches -2147483648..2147483647 run scoreboard players set $Global GunCraft.PlayerID 0
-    execute unless score $2 GunCraft.Number matches -2147483648..2147483647 run scoreboard players set $2 GunCraft.Number 2
+    execute unless score $2 GunCraft.Temp matches -2147483648..2147483647 run scoreboard players set $2 GunCraft.Temp 2

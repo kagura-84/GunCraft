@@ -1,4 +1,8 @@
 #> guncraft:core/rifle/projectile_set
+#
+# スコア設定
+#
+# @within function guncraft:core/rifle/shot
 
 # 性能
     scoreboard players set @s GunCraft.damage 10
@@ -8,6 +12,3 @@
 
 # 再帰カウント
     scoreboard players set @s GunCraft.recursion 70
-
-# speed = 770 m/s
-# reach = 200 m

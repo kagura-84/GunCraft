@@ -1,4 +1,8 @@
 #> guncraft:core/fire_gun/projectile_set
+#
+#
+#
+# @within function guncraft:core/fire_gun/shot
 
 # 性能
     scoreboard players set @s GunCraft.damage 4
