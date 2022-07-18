@@ -13,4 +13,4 @@
     scoreboard players enable @s GunParticle
     scoreboard players enable @s GunCraft.trigger
 
-tellraw @s [{ "text": "-----------------------------","color": "yellow"},{ "text": "\n\nデータパック [ ","color": "white"},{"text": "GunCraft","color": "blue"},{"text": " ] の導入が完了しました\n\n v0.1.0\n","color": "white"},{"text": "-----------------------------","color": "yellow"}]
+tellraw @s [{ "text": "-----------------------------","color": "yellow"},{ "text": "\n\nデータパック [ ","color": "white"},{"text": "GunCraft","color": "blue"},{"text": " ] の導入が完了しました\n\n v0.1.1\n","color": "white"},{"text": "-----------------------------","color": "yellow"}]
