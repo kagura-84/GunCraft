@@ -4,6 +4,7 @@
         "guncraft:system/load",
         "score_to_health:load",
         "forward_spreader:core/load",
-        "score_damage:core/init"
+        "score_damage:core/init",
+        "pretty_crafter:load"
     ]
 }
