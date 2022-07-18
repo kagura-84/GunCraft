@@ -17,6 +17,8 @@
     scoreboard objectives remove GunCraft.speed
     scoreboard objectives remove GunCraft.trigger
     scoreboard objectives remove GunCraft.recoil
+    scoreboard objectives remove GunCraft.use_gun
+    scoreboard objectives remove GunCraft.using_scope
     scoreboard objectives remove GunSound
     scoreboard objectives remove Help
     scoreboard objectives remove Setting.GunSound

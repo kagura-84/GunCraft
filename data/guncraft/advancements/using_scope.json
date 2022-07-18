@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [],
+                "item": {
+                    "items": [
+                        "minecraft:spyglass"
+                    ],
+                    "nbt": "{KaguNBT:{Item:{Type:scope_rifle}}}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "guncraft:core/scope_rifle/charge_scope"
+    }
+}

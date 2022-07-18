@@ -32,6 +32,8 @@
     scoreboard objectives add GunCraft.recoil dummy
 # used
     scoreboard objectives add GunCraft.use_gun dummy
+# scope_rifle
+    scoreboard objectives add GunCraft.using_scope dummy
 
 # Help
     scoreboard objectives add Help trigger

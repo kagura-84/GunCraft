@@ -28,6 +28,10 @@
         {
             "condition": "minecraft:reference",
             "name": "guncraft:have/fire_gun"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "guncraft:have/scope_rifle"
         }
     ]
 }

@@ -1,4 +1,4 @@
-#> guncraft:core/rifle/projectile_set
+#> guncraft:core/scope_rifle/projectile_set
 
 # 性能
     scoreboard players set @s GunCraft.damage 10
