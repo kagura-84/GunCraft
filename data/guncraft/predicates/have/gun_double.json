@@ -1,65 +1,96 @@
-{
-    "condition": "minecraft:alternative",
-    "terms": [
-        {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-                "equipment": {
-                    "mainhand": {
-                        "items": [
-                            "minecraft:carrot_on_a_stick"
-                        ],
-                        "nbt": "{KaguNBT:{Item:{Type:lazer_hand_gun}}}"
-                    },
-                    "offhand": {
-                        "items": [
-                            "minecraft:carrot_on_a_stick"
-                        ],
-                        "nbt": "{KaguNBT:{Item:{Type:lazer_hand_gun}}}"
+[
+    {
+        "condition": "minecraft:alternative",
+        "terms": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "offhand": {
+                            "items": [
+                                "minecraft:carrot_on_a_stick"
+                            ],
+                            "nbt": "{KaguNBT:{Item:{Type:lazer_hand_gun}}}"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "offhand": {
+                            "items": [
+                                "minecraft:carrot_on_a_stick"
+                            ],
+                            "nbt": "{KaguNBT:{Item:{Type:fire_gun}}}"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "offhand": {
+                            "items": [
+                                "minecraft:carrot_on_a_stick"
+                            ],
+                            "nbt": "{KaguNBT:{Item:{Type:hand_gun}}}"
+                        }
                     }
                 }
             }
-        },
-        {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-                "equipment": {
-                    "offhand": {
-                        "items": [
-                            "minecraft:carrot_on_a_stick"
-                        ],
-                        "nbt": "{KaguNBT:{Item:{Type:fire_gun}}}"
-                    },
-                    "mainhand": {
-                        "items": [
-                            "minecraft:carrot_on_a_stick"
-                        ],
-                        "nbt": "{KaguNBT:{Item:{Type:fire_gun}}}"
+        ]
+    },
+    {
+        "condition": "minecraft:alternative",
+        "terms": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "minecraft:carrot_on_a_stick"
+                            ],
+                            "nbt": "{KaguNBT:{Item:{Type:lazer_hand_gun}}}"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "minecraft:carrot_on_a_stick"
+                            ],
+                            "nbt": "{KaguNBT:{Item:{Type:fire_gun}}}"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "minecraft:carrot_on_a_stick"
+                            ],
+                            "nbt": "{KaguNBT:{Item:{Type:hand_gun}}}"
+                        }
                     }
                 }
             }
-        },
-        {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-                "equipment": {
-                    "mainhand": {
-                        "items": [
-                            "minecraft:carrot_on_a_stick"
-                        ],
-                        "nbt": "{KaguNBT:{Item:{Type:hand_gun}}}"
-                    },
-                    "offhand": {
-                        "items": [
-                            "minecraft:carrot_on_a_stick"
-                        ],
-                        "nbt": "{KaguNBT:{Item:{Type:hand_gun}}}"
-                    }
-                }
-            }
-        }
-    ]
-}
+        ]
+    }
+]
