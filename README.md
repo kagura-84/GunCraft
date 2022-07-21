@@ -24,3 +24,6 @@ ____
 - Chen さま
   - ForwardSpreder
   - ScoreDamage
+
+一時的にライブラリをdataのなかにいれています。
+正式版を配布する際は別で導入してもらいます
