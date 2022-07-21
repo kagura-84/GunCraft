@@ -4,4 +4,4 @@
 #
 # @private
 
-execute if entity @e[tag=GunCraft.projectile] as @e[tag=GunCraft.projectile] at @s anchored eyes positioned ^ ^ ^ run function guncraft:core/projectile/move/
+execute as @e[tag=GunCraft.projectile] at @s anchored eyes positioned ^ ^ ^ run function guncraft:core/projectile/move/
