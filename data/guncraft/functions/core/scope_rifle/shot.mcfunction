@@ -9,7 +9,7 @@
     scoreboard players operation @e[tag=GunCraft.preparation,limit=1] GunCraft.PlayerID = @s GunCraft.PlayerID
 
     ## 弾丸の性能設定
-        execute as @e[tag=GunCraft.preparation] run function guncraft:core/rifle/projectile_set
+        execute as @e[tag=GunCraft.preparation] run function guncraft:core/scope_rifle/projectile_set
 
 # 発射音
     execute at @s run function guncraft:core/sounds/heavy_shot

@@ -20,7 +20,7 @@
         execute if predicate guncraft:flag/sneaking run scoreboard players set @s GunCraft.recoil 5
 
     ## クールタイム
-        scoreboard players set @s GunCraft.cool_time 2
+        scoreboard players set @s GunCraft.cool_time 4
         execute if score @s GunCraft.sneak matches 1.. run scoreboard players add @s GunCraft.cool_time 2
 
 # 微調整
