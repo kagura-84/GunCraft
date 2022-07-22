@@ -132,6 +132,11 @@ scoreboard objectives add GunParticle trigger
 # @internal
 scoreboard objectives add Setting.GunParticle dummy
 
+#> temp
+# ____
+# - 選択中のスロットです
+# @internal
+scoreboard objectives add GunCraft.slot dummy
 
 # スコア設定
     execute unless score $Global GunCraft.PlayerID matches -2147483648..2147483647 run scoreboard players set $Global GunCraft.PlayerID 0

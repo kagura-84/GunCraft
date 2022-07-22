@@ -11,4 +11,4 @@
     scoreboard players set @s GunCraft.reach 800
 
 # 再帰カウント
-    scoreboard players set @s GunCraft.recursion 70
+    scoreboard players set @s GunCraft.recursion 0

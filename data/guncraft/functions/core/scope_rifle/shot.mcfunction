@@ -6,10 +6,10 @@
 
 # 弾丸召喚
     summon marker ^ ^ ^ {Tags: ["GunCraft.projectile", "GunCraft.preparation"]}
-    scoreboard players operation @e[tag=GunCraft.preparation,limit=1] GunCraft.PlayerID = @s GunCraft.PlayerID
+    scoreboard players operation @e[tag=GunCraft.preparation,distance=..0.01,limit=1] GunCraft.PlayerID = @s GunCraft.PlayerID
 
     ## 弾丸の性能設定
-        execute as @e[tag=GunCraft.preparation] run function guncraft:core/scope_rifle/projectile_set
+        execute as @e[tag=GunCraft.preparation,distance=..0.01] run function guncraft:core/scope_rifle/projectile_set
 
 # 発射音
     execute at @s run function guncraft:core/sounds/heavy_shot
@@ -22,7 +22,7 @@
         scoreboard players set @s GunCraft.cool_time 40
 
 # 微調整
-    execute at @s anchored eyes positioned ^ ^ ^ run tp @e[tag=GunCraft.preparation] ^ ^ ^0.5 ~ ~
+    tp @e[tag=GunCraft.preparation,distance=..0.01] ^ ^ ^0.5 ~ ~
 
 # tag削除
-    tag @e[tag=GunCraft.preparation] remove GunCraft.preparation
+    tag @e[tag=GunCraft.preparation,distance=..0.01] remove GunCraft.preparation

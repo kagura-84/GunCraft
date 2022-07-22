@@ -32,7 +32,7 @@
         execute if predicate guncraft:have/bazooka if score @s GunCraft.sneak matches 20.. if score @s GunCraft.Rclick matches 1.. run function guncraft:core/shot_trigger/bazooka
 
     ## 発射処理
-        execute if score @s GunCraft.trigger matches 1.. run function guncraft:core/projectile/trigger
+        execute if score @s GunCraft.trigger matches 1.. at @s anchored eyes positioned ^ ^ ^ run function guncraft:core/projectile/trigger
 
 # 減速
     ## hand_gun

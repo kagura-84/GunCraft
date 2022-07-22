@@ -18,7 +18,7 @@
         execute at @s if block ~ ~ ~ #guncraft:in_water run function guncraft:core/projectile/in_water/
 
 # パーティクル表示
-    function guncraft:core/projectile/move/particle
+    function guncraft:core/projectile/move/particle/player_check
 
 # 衝突判定
     execute at @s positioned ~-0.125 ~-0.125 ~-0.125 if entity @e[dx=0,limit=1,type=!#guncraft:no_health] positioned ~-0.75 ~-0.75 ~-0.75 if entity @e[nbt={Invulnerable: 0b},dx=0,limit=1,type=!#guncraft:no_health] run function guncraft:core/projectile/hit/

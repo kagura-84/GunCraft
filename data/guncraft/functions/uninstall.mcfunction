@@ -22,6 +22,7 @@
     scoreboard objectives remove GunParticle
     scoreboard objectives remove Help
     scoreboard objectives remove Setting.GunParticle
+    scoreboard objectives remove GunCraft.slot
 
     tellraw @a {"color": "yellow","text": "[ 1 / 2 ]"}
 
